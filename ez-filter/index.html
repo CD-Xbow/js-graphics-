@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  
+		<style>
+			#header{
+				background-color: darkgray;
+				width:100%;
+				height:30px;
+				text-align: center;
+			}
+
+			#sidebar-left{
+				float:left;
+				width:260px;
+				background-color: darkgray;
+			}
+
+			#main{
+				float:left;
+				width:75%;
+				background-color: lightgray;
+			}
+			#footer{
+				clear:both;
+				height: 20px;
+				width: 100%;
+				text-align: center;
+				background-color: darkgray;
+			}
+
+			#sidebar-left, #main, #sidebar-right{
+				min-height: 600px				
+			}
+
+		.auto-style1 {
+			font-size: small;
+		}
+
+		</style>
+<link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body style="background-color: #000000">
+		<div id="header">
+			<h3> E Z&nbsp; - F i l t e r</h3>
+		</div>
+		
+		<div id="sidebar-left">
+		<input type="file" id="fileInput" accept="image/*" style="width: 200px; height: 24px">
+		 <div class="controls">
+        <label for="scaleRange"><br />
+			 Scale: </label>
+        <input type="range" id="scaleRange" min="10" max="500" value="100">
+        <span id="scaleValue">100%</span>
+    </div>
+    <div class="controls">
+        <label for="rotateRange">Rotate: </label>
+        <input type="range" id="rotateRange" min="0" max="360" value="0">
+        <span id="rotateValue">0°</span>
+    </div>
+    <div class="controls">
+        <label for="brightnessRange">Bright: </label>
+        <input type="range" id="brightnessRange" min="0" max="200" value="100">
+        <span id="brightnessValue">100%</span>
+    </div>
+    <div class="controls">
+        <label for="contrastRange">Contrast:</label><input type="range" id="contrastRange" min="0" max="200" value="100">
+        <span id="contrastValue">100%</span>
+    </div>
+    <div class="controls">
+        <label for="grayscaleRange">Graysc.: </label>
+        <input type="range" id="grayscaleRange" min="0" max="100" value="0">
+        <span id="grayscaleValue">0%</span>
+    </div>
+    <div class="controls">
+        <label for="hueRotateRange">Hue-Rotate:</label><input type="range" id="hueRotateRange" min="0" max="360" value="0">
+        <span id="hueRotateValue">0°</span>
+    </div>
+    <div class="controls">
+        <label for="invertRange">Invert: </label>
+        <input type="range" id="invertRange" min="0" max="100" value="0">
+        <span id="invertValue">0%</span>
+    </div>
+    <div class="controls">
+        <label for="opacityRange">Opacity: </label>
+        <input type="range" id="opacityRange" min="0" max="100" value="100">
+        <span id="opacityValue">100%</span>
+    </div>
+    <div class="controls">
+        <label for="saturateRange">Saturate:</label><input type="range" id="saturateRange" min="0" max="200" value="100">
+        <span id="saturateValue">100%</span>
+    </div>
+    <div class="controls">
+        <label for="sepiaRange">Sepia: </label>
+        <input type="range" id="sepiaRange" min="0" max="100" value="0">
+        <span id="sepiaValue">0%</span>
+    </div>
+    <button id="saveButton">Save Image</button>
+		
+		</div>
+		
+		<div id="main">&nbsp;<canvas id="canvas"></canvas>
+    </div>
+		
+
+		<div id="footer"><span class="auto-style1"><strong>EZ-Filter</strong> - 
+			copyright 2025 CD Xbow - CC-BY-SA-NC Licence</span>
+			<a href="https://github.com/CD-Xbow/js-graphics-/tree/main/ez-filter">
+			<span class="auto-style1">Files at Github</span></a></div>
+	<script src="script.js"></script>
+	</body>
+</html>
