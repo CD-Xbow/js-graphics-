@@ -1,2 +1,4 @@
-# js-graphics-
-Small JS graphics app  1. ez-filter-
+# JS-graphics-
+Small JS graphics apps 
+
+1. EZ-Filter: Real time adjustment of CSS filter properties.
