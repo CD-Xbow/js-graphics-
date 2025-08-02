@@ -1,3 +1,3 @@
 EZ- Filter
 
-Real time adjustment of CSS filter properties.
+Simple to use, real time adjustment of CSS filter properties, size and rotation
